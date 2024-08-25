@@ -1,0 +1,58 @@
+﻿/ToDoListApp
+│
+├── /src
+│   ├── /Domain
+│   │   ├── /Entities
+│   │   │   ├── BaseEntity.cs
+│   │   │   ├── Task.cs
+│   │   │   └── User.cs
+│   │   ├── /Interfaces
+│   │   │   ├── ITaskRepository.cs
+│   │   │   ├── IUserRepository.cs
+│   │   │   ├── IAuthService.cs
+│   │   │   └── IUnitOfWork.cs
+│   │   └── /Exceptions
+│   │       ├── TaskNotFoundException.cs
+│   │       └── UnauthorizedException.cs
+│   ├── /Application
+│   │   ├── /Commands
+│   │   │   ├── CreateTaskCommand.cs
+│   │   │   ├── DeleteTaskCommand.cs
+│   │   │   └── /Handlers
+│   │   │       ├── CreateTaskCommandHandler.cs
+│   │   │       └── DeleteTaskCommandHandler.cs
+│   │   ├── /Queries
+│   │   │   ├── GetTaskByIdQuery.cs
+│   │   │   ├── GetTasksQuery.cs
+│   │   │   └── /Handlers
+│   │   │       ├── GetTaskByIdQueryHandler.cs
+│   │   │       └── GetTasksQueryHandler.cs
+│   │   ├── /DTOs
+│   │   │   ├── TaskDto.cs
+│   │   │   └── UserDto.cs
+│   │   └── /Interfaces
+│   │       ├── ICommand.cs
+│   │       └── IQuery.cs
+│   ├── /Infrastructure
+│   │   ├── /Persistence
+│   │   │   ├── ToDoContext.cs
+│   │   │   ├── TaskRepository.cs
+│   │   │   ├── UserRepository.cs
+│   │   │   └── UnitOfWork.cs
+│   │   └── /Services
+│   │       ├── AuthService.cs
+│   │       └── JwtTokenService.cs
+│   ├── /Presentation
+│   │   └── /Controllers
+│   │       ├── TaskController.cs
+│   │       └── AuthController.cs
+│   └── /Test
+│       └── /UnitTests
+│           ├── /CommandHandlerTests
+│           │   ├── CreateTaskCommandHandlerTests.cs
+│           │   └── DeleteTaskCommandHandlerTests.cs
+│           ├── /QueryHandlerTests
+│           │   ├── GetTaskByIdQueryHandlerTests.cs
+│           │   └── GetTasksQueryHandlerTests.cs
+│           └── AuthServiceTests.cs
+└── ToDoListApp.sln
