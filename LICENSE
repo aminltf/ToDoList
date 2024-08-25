@@ -1,0 +1,5 @@
+### Brief Description for the Description Section
+
+"**The To-Do List Application** is a robust, scalable solution built with .NET Core and C#. It uses Clean Architecture principles to separate concerns and facilitate maintenance and scalability. The application supports CRUD operations for managing tasks and employs JWT for secure user authentication. Featuring a layered architecture, it ensures clear separation between domain logic and implementation details, making it an ideal project for learning and demonstrating best practices in modern software development." 
+
+This description gives a clear, concise overview of what the project does, its architecture, and its key features.
